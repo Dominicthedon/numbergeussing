@@ -12,7 +12,7 @@ System.out.println("Welcome to your number geussing Game");
         geuss = 5;
         int answer;
         answer = (int) (Math.random() * 100);
-System.out.println(answer);
+;
         do {
             Scanner keyboard;
             keyboard = new Scanner(System.in);
@@ -26,9 +26,11 @@ System.out.println(answer);
             }
              else if (geuss == answer) {
                 System.out.println("Correct you win");
+         System.out.println("Would you like to play again");
             }
         } while (geuss>answer || geuss < answer);
 
-
+}
+    {
     }
 }
