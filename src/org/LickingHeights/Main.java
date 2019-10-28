@@ -12,19 +12,22 @@ System.out.println("Welcome to your number geussing Game");
         geuss = 5;
         int answer;
         answer = (int) (Math.random() * 100);
-        System.out.print(answer);
-
+System.out.println(answer);
         do {
             Scanner keyboard;
             keyboard = new Scanner(System.in);
-            System.out.print("Geuss an number");
+            System.out.println("Please give me a number");
+            geuss = keyboard.nextInt();
             if (geuss> answer){
-                System.out.println("You geuss the right answer ");
+                System.out.println("That number is too high. Geuss again");
             }
-             else if (geuss<answer){
-
-
-        } while ()
+             else if (geuss < answer){
+                System.out.println("This number is too low. Try again");
+            }
+             else if (geuss == answer) {
+                System.out.println("Correct you win");
+            }
+        } while (geuss>answer || geuss < answer);
 
 
     }
