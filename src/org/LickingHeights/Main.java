@@ -5,14 +5,21 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        // write your code her
+
 System.out.println("Hello PLayer");
 System.out.println("Welcome to your number geussing Game");
         int geuss;
+        String playagain;
+        playagain = "yes";
+String playagain1 = null;
         geuss = 5;
         int answer;
         answer = (int) (Math.random() * 100);
-;
+System.out.println(answer);
+
+
+
+
         do {
             Scanner keyboard;
             keyboard = new Scanner(System.in);
@@ -26,10 +33,11 @@ System.out.println("Welcome to your number geussing Game");
             }
              else if (geuss == answer) {
                 System.out.println("Correct you win");
-         System.out.println("Would you like to play again");
+                System.out.println(answer + " You geussed, Correct");
+              System.out.println("Would you like to play again");
             }
-        } while (geuss>answer || geuss < answer);
 
+        } while (geuss>answer || geuss < answer);
 }
     {
     }
